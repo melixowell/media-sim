@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главред — симулятор главного редактора</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <main class="app">
+      <header class="hero">
+        <div>
+          <h1>Главред</h1>
+          <p class="subtitle">Новый сезон. 10 насыщенных дней и десятки решений в прямом эфире.</p>
+        </div>
+        <div class="season">
+          <p>Сезон 2026</p>
+          <p id="progress">День 1 / 10</p>
+        </div>
+      </header>
+
+      <section class="stats" aria-label="Показатели станции">
+        <article>
+          <h2>Рейтинг</h2>
+          <p id="rating">50</p>
+          <div class="meter"><span id="rating-bar"></span></div>
+        </article>
+        <article>
+          <h2>Бюджет</h2>
+          <p id="budget">100</p>
+          <div class="meter"><span id="budget-bar"></span></div>
+        </article>
+        <article>
+          <h2>Репутация</h2>
+          <p id="reputation">50</p>
+          <div class="meter"><span id="reputation-bar"></span></div>
+        </article>
+        <article>
+          <h2>День</h2>
+          <p id="day">1</p>
+          <div class="meter neutral"><span id="day-bar"></span></div>
+        </article>
+      </section>
+
+      <section id="scenario-card" class="card" aria-live="polite">
+        <p class="label">Ситуация в эфире</p>
+        <h2 id="scenario-title">Загрузка…</h2>
+        <p id="scenario-text"></p>
+
+        <div class="choices">
+          <button id="choice-a" class="choice"></button>
+          <button id="choice-b" class="choice"></button>
+          <button id="choice-c" class="choice"></button>
+        </div>
+      </section>
+
+      <section class="log-wrap">
+        <h2>Лента редактора</h2>
+        <ul id="log"></ul>
+      </section>
+
+      <div class="actions">
+        <button id="restart" class="ghost">Новая игра</button>
+      </div>
+    </main>
+
+    <template id="log-item-template">
+      <li></li>
+    </template>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
