@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[3759,[],"ViewportBoundary"]
+3:I[3759,[],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[5822,[],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Перед выходом"}],["$","meta","1",{"name":"description","content":"Умный помощник, который напомнит, что взять и сделать перед выходом из дома."}],["$","link","2",{"rel":"shortcut icon","href":"/media-sim/favicon.svg"}],["$","link","3",{"rel":"icon","href":"/media-sim/favicon.svg"}],["$","$L5","4",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"99Ubv2MZeU6SWp_p0NLS3"}
